@@ -22,12 +22,12 @@ $router->group(['prefix' => 'api'], function () use ($router) {
     $router->get('/users',['uses' => 'UserController@getUsers']);
 });
    
-$router->get('/users', 'UserController@index');
+$router->get('/users2', 'UserController@index');
 $router->post('/users', 'UserController@addUser');
-$router->get('/users/{id}', 'UserController@show');
-$router->put('/users/{id}', 'UserController@update');
-$router->patch('/users/{id}', 'UserController@update');
-$router->delete('/users/{id}', 'UserController@delete');
+$router->get('/users2/{id}', 'UserController@show');
+$router->put('/users2/{id}', 'UserController@update');
+$router->patch('/users2/{id}', 'UserController@update');
+$router->delete('/users2/{id}', 'UserController@delete');
 
 // userjob routes
 $router->get('/usersjob','UserJobController@index');
