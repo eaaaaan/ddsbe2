@@ -43,7 +43,7 @@
             $this->validate($request, $rules);
 
             // validate if Jobid is found in the table tbluserjob
-            $userjob = UserJob::findOrFail($request->jobid);
+            $userjob = UserJob::findOrFail($request->job_id);
 
             $user = User::create($request->all());
             return $this->successResponse($user, Response::HTTP_CREATED);
