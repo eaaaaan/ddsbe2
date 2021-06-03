@@ -23,7 +23,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 });
    
 $router->get('/users2', 'UserController@index');
-$router->post('/users', 'UserController@addUser');
+$router->post('/users2', 'UserController@addUser');
 $router->get('/users2/{id}', 'UserController@show');
 $router->put('/users2/{id}', 'UserController@update');
 $router->patch('/users2/{id}', 'UserController@update');
